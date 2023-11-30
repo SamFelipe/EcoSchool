@@ -63,11 +63,11 @@ p {
   padding: 20px;
 }
 
-.titulo-regras {
+.titulo-regras, .titulo-orientacao {
   size: 16px;
   color: #F2F2F2;
 }
 
-.item-regras {
+.item-regras, .item-orientacao{
   color: #d8d8d8;
 }
