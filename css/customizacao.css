@@ -71,3 +71,13 @@ p {
 .item-regras, .item-orientacao{
   color: #d8d8d8;
 }
+
+.corpo-apresentacao {
+  display: flex;
+}
+
+.logo-apresentacao {
+  display: inline;
+  margin: 0px auto;
+  width: 500px;
+}
