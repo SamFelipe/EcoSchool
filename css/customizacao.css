@@ -63,6 +63,7 @@ p {
   padding: 20px;
 }
 
+
 .titulo-regras, .titulo-orientacao {
   size: 16px;
   color: #F2F2F2;
@@ -72,12 +73,18 @@ p {
   color: #d8d8d8;
 }
 
-.corpo-apresentacao {
+.corpo-apresentacao{
   display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .logo-apresentacao {
   display: inline;
   margin: 0px auto;
   width: 500px;
+}
+
+iframe {
+  margin: auto;
 }
