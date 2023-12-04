@@ -46,6 +46,11 @@
 						<a href="orientacoes.html"><span class="fa fa-exclamation-triangle mr-3"></span>
 							Orientações</a>
 					</li>
+					<li>
+						<a id="btnLogin"><span class="fa fa-sign-in mr-3"></span> Login</a>	
+					</li>
+
+					<p id="loginStatus"></p>
 				</ul>
 
 				<div class="footer">
@@ -59,7 +64,40 @@
 				</div>
 			</div>
 		</nav>
-
+		<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content bg-light">
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginModalLabel">Faça o login</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Digite seu e-mail">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Senha</label>
+                        <input type="password" class="form-control" id="password" placeholder="Digite sua senha">
+                    </div>
+                    <div id="loginErrorMessage" style="color: red;"></div> <!-- Adicione esta linha para a mensagem de erro -->
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="rememberMe">
+                        <label class="form-check-label" for="rememberMe">Lembrar de mim</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              <button type="button" class="btn btn-primary" id="btnLoginModal" onclick="login()">Entrar</button>
+            </div>
+          </div>
+        </div>
+        </div>
 		<!-- Page Content  -->
 		<div id="content" class="p-4 p-md-5 pt-5 corpo-apresentacao">
 			<div class="card card-form">
